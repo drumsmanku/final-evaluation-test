@@ -58,9 +58,7 @@ function MainPage() {
   const [showAddModal, setShowAddModal] = useState(false);
   const [commentProductId, setCommentProductId] = useState(null);
   const [sortOption, setSortOption] = useState('Select');
-  const [editProductId, setEditProductId] =useState(null);
-  const [upvotes, setUpvotes] = useState({});
-
+  const [editProductId, setEditProductId] =useState(null)
 
 
   useEffect(()=>{
@@ -117,23 +115,15 @@ function MainPage() {
 
   }, [categorySet]);
 
-  const handleUpvotes = (prodId, event) => {
-    const productIndex = sortedProducts.findIndex((prod) => prod._id === prodId);
-    const newProducts = [...sortedProducts];
+  const handleUpvotes=(prodId, event)=>{
     
-    newProducts[productIndex].upvoteCount = (newProducts[productIndex].upvoteCount || 0) + 1;
-    setProdcts(newProducts);
-  
     axios.post('https://product-portal-rnaz.onrender.com/add-upvote', {
       productId: prodId,
       upvoteCount:1,
-    }).catch(err => {
-      console.log(err);
-      newProducts[productIndex].upvoteCount -= 1;
-      setProdcts(newProducts);
     })
+    .then(window.location.reload())
+    .catch(err=>console.log(err))
   }
-  
 
   const sortedProducts = useMemo(() => {
     if (sortOption === 'upvotes') {

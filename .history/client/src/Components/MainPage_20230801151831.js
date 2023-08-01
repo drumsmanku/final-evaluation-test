@@ -129,7 +129,7 @@ function MainPage() {
       upvoteCount:1,
     }).catch(err => {
       console.log(err);
-      newProducts[productIndex].upvoteCount -= 1;
+      newProducts[productIndex].upvoteCount -= 1;  // if API call fails, revert to original state
       setProdcts(newProducts);
     })
   }
