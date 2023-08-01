@@ -257,7 +257,7 @@ function MainPage() {
                         </div>
                         <div className='comments-and-edit' style={{height:'50%', display:'flex', alignItems:"center", width:'230%'}}>
                           {isLoggedIn && (<button className='edit-popup-button' type="submit" style={{ cursor:'pointer',}} onClick={()=>{setEditProductId(product._id); setShowEditModal(true)}} >Edit</button>)}
-                          <div className="comment-count" style={{}}>
+                          <div className="comment-count" style={isLoggedIn?{justifyContent:'center'}}>
                             {product.commentsCount || 0}
                             <img src={comment1} alt="" height={20} style={{marginLeft:'0.2rem'}} />
                           </div>

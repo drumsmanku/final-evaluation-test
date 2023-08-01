@@ -239,7 +239,7 @@ function MainPage() {
                     <div className='logo' style={{width:'10%', }}> < img className='logo-img' src={product.logoURL} alt="image" height={70} /> </div>
                     <div style={{display:'flex', justifyContent:'space-between', width:"90%"}}>
                       <div className="card-main-info">
-                        <h2 className='company-name' style={{marginTop:0, marginBottom:'0.5rem', color:'#36416A'}}> <a style={{textDecoration:'none', color:'#36416A'}} href={product.productLink}>{product.companyName}</a> </h2>
+                        <h2 className='company-name' style={{marginTop:0, marginBottom:'0.5rem', color:'#36416A'}}> <a href={product.productLink}>{product.companyName}</a> </h2>
                         <span className='product-description' style={{marginBottom:'1rem'}}>{product.description}</span>
                         <div style={{display:'flex', width:'40%', justifyContent:'space-between'}}>
                           <div style={{display:'flex'}}>
