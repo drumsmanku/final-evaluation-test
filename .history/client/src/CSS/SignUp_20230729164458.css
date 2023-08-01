@@ -1,0 +1,21 @@
+
+.signup-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #36416A;
+}
+.headings{
+  color: white;
+}
+.signup-container form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.signup-container input[type='text'], [type='password'], [type='email']{
+  
+}

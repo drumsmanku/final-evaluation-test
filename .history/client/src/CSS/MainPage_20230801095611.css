@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+  font-family: 'DM Sans';
+}
+.main-container{
+  height: 100vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  
+}
+.main-top-container{
+  width: 100.5%;
+}
+.btn-main-page-login{
+  height: 2rem;
+  width: 6rem;
+  font-weight: 500;
+  font-size: medium ;
+  background: none;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+  margin-bottom:0;
+  color: white;
+  font-family: 'DM Sans';
+  cursor: pointer;
+}
+.btn-main-page-register{
+  height: 2rem;
+  width: 6rem;
+  font-size: medium;
+  font-weight: 500;
+  background-color: #36416A;
+  border: 2px solid white;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+  margin-bottom:0;
+  color: white;
+  font-family: 'DM Sans';
+  cursor: pointer;
+}
+.navbar{
+  width: 100%;
+  background-color: #36416A;
+}
+.title-desc{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.bottom-left{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  
+}
+.mapped-cats{
+  width:65%;
+  border-radius:0.8rem;
+  padding:1em;
+  box-shadow:0 0 17px #00000026;
+}
+.bottom-right{
+  width: 75%;
+}
+.main-bottom-container{
+  width:100%;
+  display: flex;
+}
+.bottom-top-right{
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #36416A59;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+
+}
+.add-product-button{
+  height: 2rem;
+  font-size: medium;
+  font-weight: 500;
+  background-color: #36416A;
+  border:none;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+  margin-bottom:0;
+  color: white;
+  font-family: 'DM Sans';
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.product-cards{
+  width: 100%;
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+}
+.card-main-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.comments-button{
+  color: #ABABAB;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: small;
+  letter-spacing: 0.1rem;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+}
+.upvotes{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.upvote-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  background-color: #C7CBD6;
+  border-radius:1rem;
+  align-items: center;
+}
+.comment-count{
+  display: flex;
+  align-items: flex-end;
+
+  height: 100%;
+  width: 100%;
+  margin-left: 1rem;
+}
+.edit-popup-button{
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  color: white;
+  height: 2rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #36416A;
+  
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .title-desc{
+    flex-direction: column;
+  }
+  .both-texts{
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+  }
+  .apply-filter{
+    display: none;
+  }
+  .main-heading{
+    max-width: 90%;
+  }
+  .main-bottom-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mapped-cats{
+    display: flex;
+    width: 120%;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  .bottom-left{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+  }
+  .bottom-top-right{
+    width: 82vw;
+    font-size: small;
+    margin-left: 2rem;
+  }
+  .suggestions{
+    width: 100%;
+    margin-right: 2rem;
+  }
+  .product-cards{
+    width: 90vw;
+  }
+  .main-card-container-div{
+    width: 90%;
+    font-size: small;
+    margin-left: 2rem;
+    
+  }
+  .comments-and-edit{
+    display: block;
+    flex-wrap: wrap;
+    
+  }
+  .comment-count{
+    align-items: flex-start;
+  }
+  .edit-popup-button{
+    font-size: x-small;
+    
+    margin-top: 0.2rem;
+    width: 3rem;
+    text-align: center;
+  }
+  .user-name{
+    justify-content: center;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .login-button-navbar{
+    margin-left: 1rem;
+  }
+  .logo-img{
+    height: 3rem;
+  }
+  
+  .card-main-info{
+    padding-left: 2rem;
+  }
+
+}
+@media (max-width: 480px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .title-desc{
+    flex-direction: column;
+  }
+}
